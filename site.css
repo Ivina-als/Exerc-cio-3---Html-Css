@@ -76,55 +76,33 @@ nav a {
   font-size: x-small;
 }
 
-/* Section */
-
 section {
   display: flex;
 }
 
-.page-flex {
-  display: flex;
-  flex-direction: column;
-}
-
 /*- top-container */
 
-.top-container {
-  display: flex;
-  height: 100%;
+.car-family {
+  width: 50%;
+  padding: 0px 10px 0px 20px;
 }
-
-.car-tree {
-  width: 55%;
-  height: 100%;
-  display: flex;
-  background-image: url(./banner_sem_fundo.png);
-  background-repeat: no-repeat;
-  background-size: 550px;
-  background-position: top;
-}
-
 .content-art {
-  width: 45%;
-  height: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  padding-top: 40px;
+  padding-top: 15px;
 }
 
-h3 {
-  text-align: center;
+h1 {
+  text-align: left;
   font-family: monospace;
-  font-size: x-large;
-  margin: 0;
+  font-size: 15px;
+  line-height: 20px;
   color: rgb(68, 68, 68);
 }
 
-h6 {
+h2 {
   color: rgb(86, 128, 62);
   font-family: sans-serif;
   margin-top: 10px;
+  font-size: x-small;
 }
 
 .paragraph {
@@ -196,41 +174,65 @@ h6 {
 
 .mid-container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
   padding-top: 15px;
   padding-left: 20px;
   padding-right: 20px;
+  height: 100px;
 }
 
 .text-style {
-  width: 100%;
+  width: 50%;
+  margin: 0;
   display: flex;
-  text-align: center;
   flex-direction: column;
-  box-sizing: border-box;
+  text-align: left;
+  align-items: center;
 }
 
 .text-mid-1 {
   font-family: monospace;
   font-size: small;
   color: #4ec191;
+  text-align: center;
+  margin: 0 0 10px;
 }
 
 .text-mid-2 {
-  font-family: fantasy;
+  font-family: sans-serif;
   font-size: x-large;
+  color: #273872;
+  text-align: center;
+  margin: 0;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app {
+  width: 60px;
+}
+
+.anchor-app {
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: x-small;
+  color: #394f76;
   padding-top: 10px;
-  color: #0429a0;
+  cursor: pointer;
 }
 
 .services {
   display: flex;
-  flex-direction: row;
   gap: 5px;
   height: 150px;
-  margin-left: 40px;
-  margin-right: 40px;
-  font-size: small;
+  margin: 0 40px 0 40px;
   font-family: system-ui;
 }
 
@@ -284,11 +286,6 @@ h6 {
 
 /*bottom-container*/
 
-.bottom-container {
-  display: flex;
-  flex-direction: row;
-}
-
 .bottom-imgs {
   display: flex;
   flex-direction: column;
@@ -299,8 +296,6 @@ h6 {
   left: 60px;
   top: 40px;
   width: 80px;
-  height: 80px;
-  z-index: 999;
 }
 
 .car-bottom {
@@ -308,21 +303,18 @@ h6 {
 }
 
 .benefits {
-  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-h4 {
+h5 {
   color: #4c8d82;
   margin: 0%;
   font-size: system-ui;
 }
 
 .benefits-title {
-  margin-left: 20px;
-  margin-top: 10px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin: 10px 0 10px 20px;
   font-size: 25px;
   color: #394f76;
 }
@@ -330,14 +322,12 @@ h4 {
 .benefits-title-2 {
   color: #545455;
   font-size: 10px;
-  padding-top: 10px;
   font-family: system-ui;
 }
 .benefits-list {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex: 1;
   gap: 10px;
   padding-left: 30px;
   font-family: system-ui;
@@ -370,14 +360,12 @@ footer {
 .footer-container {
   width: 100%;
   display: flex;
-  flex-direction: row;
   box-shadow: 0px -1px #d1d3d3;
 }
 
 .footer-logo {
   display: flex;
   align-items: center;
-  text-align: start;
   width: 50%;
 }
 

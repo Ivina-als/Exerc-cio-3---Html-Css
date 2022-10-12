@@ -23,6 +23,7 @@
               <div class="name-logo">Safe Car</div>
             </div>
             <div class="anchors">
+              <!--Não tem href válido nas âncoras porque só fiz a primeira página-->
               <a class="menu" href="#">Home</a>
               <a class="menu" href="#">Serviços</a>
               <a class="menu-login" href="#">Login</a>
@@ -33,132 +34,121 @@
 
       <!--Informações da Section foi dividida em três partes top-container, mid-container e bottom-container-->
 
-      <section>
-        <div class="page-flex">
-          <!--top-container-->
+      <!--top-section-->
 
-          <div class="top-container">
-            <div class="car-tree"></div>
-            <div class="content-art">
-              <h3>Ampla Cobertura</h3>
-              <h6>Quilômetro ilimitado</h6>
+      <section class="top-container">
+        <img src="./car-family.png" class="car-family" />
+        <article class="content-art">
+          <h1>Seguro auto com km ilimitado</h1>
+          <h2>Ampla Cobertura</h2>
 
-              <span class="paragraph"
-                ><b>
-                  Atendimento exclusivo, coberturas e serviços de assistência
-                  flexíveis que atendem as suas necessidades, com proteção
-                  válida por todo o território nacional.</b
-                >
-              </span>
-              <br />
-              <label class="label" for="input"
-                ><b>Solicite sua cotação</b></label
-              >
-              <div class="div-input">
-                <img src="./email_icon.svg" class="image-email" />
-                <input
-                  class="input"
-                  placeholder="Digite seu e-mail"
-                  id="email"
+          <p class="paragraph">
+            <b>
+              Atendimento exclusivo, coberturas e serviços de assistência
+              flexíveis que atendem as suas necessidades, com proteção válida
+              por todo o território nacional.
+            </b>
+          </p>
+          <br />
+          <form>
+            <label class="label" for="input"><b>Solicite sua cotação</b></label>
+            <div class="div-input">
+              <img src="./email_icon.svg" class="image-email" />
+              <input class="input" placeholder="Digite seu e-mail" id="email" />
+              <button class="button">
+                <img
+                  src="./icone-seta.png"
+                  alt="icone-seta"
+                  class="icone-seta"
                 />
-                <button class="button">
-                  <img
-                    src="./icone-seta.png"
-                    alt="icone-seta"
-                    class="icone-seta"
-                  />
-                </button>
-              </div>
+              </button>
             </div>
-          </div>
+          </form>
+        </article>
+      </section>
 
-          <!--mid-container-->
+      <!--mid-container-->
 
-          <div class="mid-container">
-            <div class="text-style">
-              <span class="text-mid-1"> Seguro completo </span>
-              <span class="text-mid-2"> Serviços ao seu alcance </span>
-            </div>
-            <div class="services">
-              <div class="service">
-                <button class="service-btn">
-                  <img
-                    src="./icone ferramenta.png"
-                    alt="ferramenta"
-                    class="tool"
-                  />
-                </button>
-                <span class="service-txt">Serviços de reparo 24h</span>
-              </div>
-              <div class="service">
-                <button class="service-btn">
-                  <img src="./seguranca.png" alt="seguranca" class="safe" />
-                </button>
-                <span class="service-txt">Cobertura para terceiros</span>
-              </div>
-              <div class="service">
-                <button class="service-btn">
-                  <img src="./guincho.png" alt="guincho" class="winch" />
-                </button>
-                <span class="service-txt">Guincho com quilometragem livre</span>
-              </div>
-            </div>
-          </div>
+      <section class="mid-container">
+        <article class="text-style">
+          <h3 class="text-mid-1">Seguro completo</h3>
+          <h4 class="text-mid-2"><b>Serviços ao seu alcance</b></h4>
+        </article>
+        <aside>
+          <img src="./appcerto.png" alt="app" class="app" />
+          <a class="anchor-app"><b>Baixe nosso app</b></a>
+        </aside>
+      </section>
 
-          <!--bottom-container-->
+      <div class="services">
+        <div class="service">
+          <button class="service-btn">
+            <img src="./icone ferramenta.png" alt="ferramenta" class="tool" />
+          </button>
+          <span class="service-txt">Serviços de reparo de automóveis 24h</span>
+        </div>
+        <div class="service">
+          <button class="service-btn">
+            <img src="./seguranca.png" alt="seguranca" class="safe" />
+          </button>
+          <span class="service-txt">Cobertura para terceiros</span>
+        </div>
+        <div class="service">
+          <button class="service-btn">
+            <img src="./guincho.png" alt="guincho" class="winch" />
+          </button>
+          <span class="service-txt">Guincho com quilometragem livre</span>
+        </div>
+      </div>
 
-          <div class="bottom-container">
-            <div class="bottom-imgs">
-              <img class="padlock" src="./cadeado.png" alt="cadeado" />
+      <!--bottom-container-->
+
+      <section class="bottom-container">
+        <div class="bottom-imgs">
+          <img class="padlock" src="./cadeado.png" alt="cadeado" />
+          <img class="car-bottom" src="./carro rodape.jpg" alt="carro-bottom" />
+        </div>
+        <div class="benefits">
+          <h5>Muito além</h5>
+          <h6 class="benefits-title">Benefícios</h6>
+          <p class="benefits-title-2">
+            Excelente qualidade, agilidade nos serviços prestados e garantia de
+            suporte para segurados e para terceiros
+          </p>
+          <article class="benefits-list">
+            <div class="benefits-text">
               <img
-                class="car-bottom"
-                src="./carro rodape.jpg"
-                alt="carro-bottom"
+                class="benefits-check-img"
+                src="./check.png"
+                alt="benefits-check-img"
               />
+              <span>Valor 10x sem juros</span>
             </div>
-            <div class="benefits">
-              <h4>Muito além</h4>
-              <span class="benefits-title"> Benefícios </span>
-              <span class="benefits-title-2"
-                >Excelente qualidade, agilidade nos serviços prestados e
-                garantia de suporte para segurados e para terceiros</span
-              >
-              <div class="benefits-list">
-                <div class="benefits-text">
-                  <img
-                    class="benefits-check-img"
-                    src="./check.png"
-                    alt="benefits-check-img"
-                  />
-                  <span>Valor 10x sem juros</span>
-                </div>
-                <div class="benefits-text">
-                  <img
-                    class="benefits-check-img"
-                    src="./check.png"
-                    alt="benefits-check-img"
-                  />
-                  <span>quilometragem ilimitada</span>
-                </div>
-                <div class="benefits-text">
-                  <img
-                    class="benefits-check-img"
-                    src="./check.png"
-                    alt="benefits-check-img"
-                  />
-                  <span>Cobertura para terceiros</span>
-                </div>
-                <div class="benefits-text">
-                  <img
-                    class="benefits-check-img"
-                    src="./check.png"
-                    alt="benefits-check-img"
-                  />
-                  <span>Franquia reduzida</span>
-                </div>
-              </div>
+            <div class="benefits-text">
+              <img
+                class="benefits-check-img"
+                src="./check.png"
+                alt="benefits-check-img"
+              />
+              <span>quilometragem ilimitada</span>
             </div>
-          </div>
+            <div class="benefits-text">
+              <img
+                class="benefits-check-img"
+                src="./check.png"
+                alt="benefits-check-img"
+              />
+              <span>Cobertura para terceiros</span>
+            </div>
+            <div class="benefits-text">
+              <img
+                class="benefits-check-img"
+                src="./check.png"
+                alt="benefits-check-img"
+              />
+              <span>Franquia reduzida</span>
+            </div>
+          </article>
         </div>
       </section>
 
